@@ -1,0 +1,15 @@
+{
+  "name": "cybersec-platform",
+  "version": "1.0.0",
+  "description": "Ongwaeh Platform - Penetration Testing & Vulnerability Management",
+  "scripts": {
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "cd backend && node seed.js",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
